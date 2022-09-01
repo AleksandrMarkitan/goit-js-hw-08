@@ -23,6 +23,7 @@ function onSubmitHandler(e) {
   refs.feedbackForm.elements.message.value = '';
 }
 
+let parsedFeedbackFormData;
 try {
   const savedFeedbackFormData = localStorage.getItem('feedback-form-state');
   parsedFeedbackFormData = JSON.parse(savedFeedbackFormData);
